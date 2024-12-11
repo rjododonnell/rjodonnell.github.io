@@ -1,0 +1,517 @@
+@charset "UTF-8";
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
+html { 
+  background-image: url("background1.jpeg");
+
+	background-size: cover;
+  	background-attachment: fixed;
+  	background-position: center;
+	height: auto;
+
+	h1#galleryname{
+		font-size: 60pt;
+		padding: 200px;
+		padding-top: 200px;
+	}
+
+}
+	body {margin: 0px;
+box-sizing:border-box;}
+#drywall{
+	width: 100%;
+	max-height: 300px;
+	
+}
+
+
+.left {
+  background-color:#2196F3;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  /* background-color:#f1f1f1; */
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.art{
+
+/* padding-left: 300px; */
+padding-top: 150px;
+display: block;
+scale: 120%;
+text-align: center;
+}
+
+
+
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+  #title{
+	margin-top: 30px;
+	color:#000000;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	
+}
+
+#galleryname{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	font-weight:bold;
+	font-style:italic;
+	text-align: center;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 30 px;
+	/* background-color:#FFFFFF; */
+	width: 300px;
+}
+.description{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:lighter;
+	font-style:bold italic;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color:#FFFFFF; */
+	width: 330px;
+}
+.description{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:lighter;
+	font-style:italic;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color:#FFFFFF; */
+	width: 330px;
+}
+
+.link:hover{
+	opacity: .75;
+}
+
+.entrance{
+	color:#000000;
+	text-decoration: none;
+	/* background-color:#FFFFFF; */
+}
+
+.link{
+	color:#000000;
+	text-decoration: none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:lighter;
+	font-style:italic;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-color:#FFFFFF; */
+	width: 300px;
+	
+}
+
+[class*="link"] {
+  height:100%;
+}
+
+#signage{
+	Height: 375px;
+	width: 350px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: italic;
+	padding: 20px;
+	margin-left: 45px;
+	margin-right: 90px;
+	/* background-color: #FFFFFF; */
+	font-weight: lighter;
+	
+	
+}
+
+#signagelong{
+	Height: 400px;
+	width: 350px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: italic;
+	color: #FFFFFF;
+	padding: 20px;
+	margin-left: 45px;
+	margin-right: 90px;
+	/* background-color: #FFFFFF; */
+	font-weight: lighter;
+	
+	
+}
+
+#signageshort{
+	Height: 200px;
+	width: 350px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: bold italic;
+	padding: 20px;
+	margin-left: 45px;
+	margin-right: 90px;
+	color: #FFFFFF;
+	/* background-color: #FFFFFF; */
+	font-weight: lighter;
+	
+	
+}
+
+.plaque{
+	background-color: #111111; 
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	max-height: 300px;
+	min-height: 100px;
+	max-width: 80px;
+	min-width: 80px;
+	font-size: 9px;
+	line-height: 1;
+	text-align: left;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+
+	
+	margin-top: 300px;
+}
+
+ .plaqueb{
+	background-color: #FFFFFF;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	max-height: 300px;
+	min-height: 100px;
+	max-width: 80px;
+	min-width: 80px;
+        margin-right: 350px;
+
+        font-size: 9px;
+	line-height: 1;
+	text-align: left;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+
+	
+	margin-top: 50px;
+}
+    
+     .plaquec{
+	background-color: #FFFFFF;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	max-height: 300px;
+	min-height: 100px;
+	max-width: 80px;
+	min-width: 80px;
+        margin-left: 250px;
+
+        font-size: 9px;
+	line-height: 1;
+	text-align: left;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	margin-top: 50px;
+}
+
+h2{
+color: #FFFFFF;
+font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* padding-left: 130px; */
+}
+
+.art2{
+max-height: 100px;
+
+}
+
+/* 
+.plaque69{
+	background-color: black;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	max-height: 100px;
+	min-height: 100px;
+	max-width: 80px;
+	min-width: 80px;
+        margin-left: 400px;
+
+        font-size: 9px;
+	line-height: 1;
+	text-align: left;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 200px;
+	padding-left: 5px; */
+
+
+.title{
+	font-weight:bold;
+	font-style: italic;
+}
+.date{
+	font-weight:normal;
+	font-style: italic;
+}
+
+.medium{
+	font-weight:normal;
+	font-style: italic;
+}
+.projection{
+	max-height: 200px;
+	margin-left: 90px;
+	margin-right: 30px;
+}
+
+/* 
+.diptychleftxl{
+	max-height: 500px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	/* margin-left: 90px;
+	margin-right: 5px; */
+
+
+.diptychrightxl{
+	max-height: 500px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	margin-left: 5px;
+	margin-right: 30px;
+}
+.diptychleftlg{
+	max-height: 425px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	margin-left: 90px;
+	margin-right: 5px;
+}
+
+.diptychrightlg{
+	max-height: 425px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	margin-left: 5px;
+	margin-right: 30px;
+}
+
+.diptychleftm{
+	max-height: 250px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	margin-left: 90px;
+	margin-right: 5px;
+}
+
+.diptychrightm{
+	max-height: 250px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	margin-left: 5px;
+	margin-right: 30px;
+}
+.triptychleftxs{
+	max-height: 125px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left:90px;
+	margin-right: 5px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.triptychcenterxs{
+	max-height: 125px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left:5px;
+	margin-right: 5px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.triptychrightxs{
+	max-height: 125px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left:5px;
+	margin-right: 30px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.triptychleftm{
+	max-height: 200px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left:90px;
+	margin-right: 5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border: 10px solid #FFFFFF;
+}
+
+.triptychcenterm{
+	max-height: 200px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left:5px;
+	margin-right: 5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border: 10px solid #FFFFFF;
+}
+
+.triptychrightm{
+	max-height: 200px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left: 5px;
+	margin-right: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 10px solid #FFFFFF;
+}
+.piecexs{
+	max-height: 125px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left: 90px;
+	margin-right: 30px;
+}
+.pieces{
+	max-height: 150px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left: 90px;
+	margin-right: 30px;
+}
+.piecem{
+	max-height: 200px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 3px 3px #898989; */
+	margin-left: 90px;
+	margin-right: 30px;
+}
+.piecelg{
+	max-height: 425px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	margin-left: 90px;
+	margin-right: 30px;
+}
+.piecexl{
+	max-height: 500px;
+	/* -webkit-box-shadow: 0px 10px 10px #898989;
+	box-shadow: 0px 10px 10px #898989; */
+	margin-left: 90px;
+	margin-right: 30px;
+}
+
+.piecebottom{
+        position:absolute;
+	bottom: 0px
+	
+
+}
+ 
+ [class*="piecebottom"] {
+  height:100%;
+} 
+
+.art-container{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.art-container img{
+width: 425px;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+h3{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+}
+
+table{
+padding-right: 100px;
+
+}
